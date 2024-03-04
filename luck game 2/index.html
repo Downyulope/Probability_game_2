@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Probability Game</h1>
+        <label for="probability-input">Enter Probability (in %):</label>
+        <input type="number" id="probability-input" min="0" max="100" value="50">
+        <button id="play-button" onclick="playGame()">Play Game</button>
+        <button id="stop-button" onclick="stopGame()">Stop</button>
+        <button id="restart-button" onclick="restartGame()">Restart</button>
+        <p id="result"></p>
+
+        <ul id="result-list">
+            <li>Wins: <span id="win-count" class="win">0</span></li>
+            <li>Losses: <span id="lose-count" class="lose">0</span></li>
+        </ul>
+
+        <canvas id="chart" width="600" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

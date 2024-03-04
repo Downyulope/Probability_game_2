@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#result-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#result-list li {
+    margin-bottom: 5px;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
